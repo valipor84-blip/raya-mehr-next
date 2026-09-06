@@ -1,0 +1,3 @@
+module.exports=[19195,a=>{"use strict";var b=a.i(87924),c=a.i(72131);a.s(["default",0,function(){let[a,d]=(0,c.useState)("");return(0,c.useEffect)(()=>d(new URLSearchParams(location.search).get("package")||"پکیج انتخابی"),[]),(0,b.jsx)("main",{className:"orderPage",dir:"rtl",children:(0,b.jsxs)("section",{className:"orderBox success",children:[(0,b.jsx)("small",{children:"رایامهر"}),(0,b.jsx)("h1",{children:"درخواست شما با موفقیت ثبت شد"}),(0,b.jsxs)("p",{children:["درخواست «",a,"» دریافت شد. برای هماهنگی و ارسال لینک پرداخت، به‌زودی با شما تماس می‌گیریم."]}),(0,b.jsx)("a",{className:"button",href:"/",children:"بازگشت به صفحه اصلی"})]})})}])}];
+
+//# sourceMappingURL=app_payment-success_page_tsx_0--dg8g._.js.map

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/articles": {},
+    "/api/banner": {},
+    "/api/content": {},
+    "/api/design": {},
+    "/api/gallery": {},
+    "/api/orders": {},
+    "/api/testimonials": {},
+    "/api/upload": {}
+  }
+}

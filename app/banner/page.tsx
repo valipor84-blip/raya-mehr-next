@@ -1,1 +1,39 @@
-"use client";import{useEffect,useState}from"react";import{defaults,type Banner}from"../../lib/banner";export default function BannerPage(){const[b,setB]=useState<Banner>(defaults);useEffect(()=>{fetch("/api/banner").then(r=>r.json()).then(setB)},[]);if(!b.enabled)return <main className="orderPage">این بنر فعلاً غیرفعال است.</main>;return <main className="orderPage"><section className="promo"><img src={b.image} alt=""/><div><small>{b.eyebrow}</small><h1>{b.title}</h1><p>{b.text}</p><a className="button" href={b.buttonLink}>{b.buttonText}</a></div></section></main>}
+"use client";
+
+export default function BannerPage() {
+
+  return (
+    <main className="orderPage">
+
+      <section className="promo">
+
+        <img 
+          src="/images/packages.jpg" 
+          alt=""
+        />
+
+        <div>
+          <small>پیشنهاد ویژه رایامهر</small>
+
+          <h1>
+            یادگیری زبان، یک هدیه ماندگار برای کودک شما
+          </h1>
+
+          <p>
+            پکیج مناسب سن فرزندتان را انتخاب کنید و مسیر دوزبانه‌شدن را با آرامش شروع کنید.
+          </p>
+
+          <a 
+            className="button" 
+            href="#packages"
+          >
+            مشاهده پکیج‌ها
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}

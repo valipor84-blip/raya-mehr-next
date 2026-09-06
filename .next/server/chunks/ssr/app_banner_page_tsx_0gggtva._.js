@@ -1,0 +1,3 @@
+module.exports=[64917,a=>{"use strict";var b=a.i(87924);a.s(["default",0,function(){return(0,b.jsx)("main",{className:"orderPage",children:(0,b.jsxs)("section",{className:"promo",children:[(0,b.jsx)("img",{src:"/images/packages.jpg",alt:""}),(0,b.jsxs)("div",{children:[(0,b.jsx)("small",{children:"پیشنهاد ویژه رایامهر"}),(0,b.jsx)("h1",{children:"یادگیری زبان، یک هدیه ماندگار برای کودک شما"}),(0,b.jsx)("p",{children:"پکیج مناسب سن فرزندتان را انتخاب کنید و مسیر دوزبانه‌شدن را با آرامش شروع کنید."}),(0,b.jsx)("a",{className:"button",href:"#packages",children:"مشاهده پکیج‌ها"})]})]})})}])}];
+
+//# sourceMappingURL=app_banner_page_tsx_0gggtva._.js.map
