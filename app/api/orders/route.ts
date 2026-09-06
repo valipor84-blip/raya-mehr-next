@@ -1,0 +1,7 @@
+import { NextResponse } from "next/server";
+import { isAdmin } from "../../../lib/auth";
+import { createOrder, readOrders, type OrderStatus, updateOrderStatus } from "../../../lib/orders";
+export const runtime = "nodejs";
+export async function GET() { if (!(await isAdmin())) return NextResponse.json({ message: "دسترسی غیرمجاز است." }, { status: 401 }); return NextResponse.json(await readOrders()); }
+export async function POST(request: Request) { const body = await request.json(); if (!body.parentName || !body.phone || !body.childName || !body.childAge || !body.packageName) return NextResponse.json({ message: "لطفاً اطلاعات ضروری را کامل کنید." }, { status: 400 }); return NextResponse.json(await createOrder({ parentName: body.parentName, phone: body.phone, childName: body.childName, childAge: body.childAge, packageName: body.packageName, city: body.city || "", message: body.message || "" }), { status: 201 }); }
+export async function PATCH(request: Request) { if (!(await isAdmin())) return NextResponse.json({ message: "دسترسی غیرمجاز است." }, { status: 401 }); const { id, status } = await request.json(); if (!id || !["new", "contacted", "completed"].includes(status)) return NextResponse.json({ message: "اطلاعات نامعتبر است." }, { status: 400 }); const order = await updateOrderStatus(id, status as OrderStatus); return order ? NextResponse.json(order) : NextResponse.json({ message: "سفارش پیدا نشد." }, { status: 404 }); }

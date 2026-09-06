@@ -1,0 +1,4 @@
+"use client";
+import { useEffect, useState } from "react";
+import { defaultContent, type SiteContent } from "../../lib/site-types";
+export default function About(){const [c,setC]=useState<SiteContent>(defaultContent);useEffect(()=>{fetch("/api/content").then(r=>r.json()).then(setC);},[]);return <main className="orderPage" dir="rtl"><a className="back" href="/">← بازگشت به سایت</a><section className="orderBox aboutPage"><img src={c.teacherImage} alt="مدرس رایامهر"/><div><small>درباره رایامهر</small><h1>{c.teacherTitle}</h1><p>{c.teacherDescription}</p><h2>روش آموزشی ما</h2><p>در رایامهر، آموزش زبان با بازی، تصویر، تکرار هدفمند و همراهی والدین پیش می‌رود تا کودک با علاقه و بدون فشار زبان را تجربه کند.</p><h2>مأموریت ما</h2><p>کمک به کودکان برای ساختن پایه‌ای شیرین و ماندگار در زبان انگلیسی، متناسب با سن و ریتم یادگیری هر کودک.</p><a className="button" href="/contact">تماس با رایامهر</a></div></section></main>}

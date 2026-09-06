@@ -1,0 +1,14 @@
+{
+  "/about/page": "app/about/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/api/articles/route": "app/api/articles/route.js",
+  "/api/auth/route": "app/api/auth/route.js",
+  "/api/content/route": "app/api/content/route.js",
+  "/api/design/route": "app/api/design/route.js",
+  "/api/orders/route": "app/api/orders/route.js",
+  "/api/testimonials/route": "app/api/testimonials/route.js",
+  "/articles/page": "app/articles/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/order/page": "app/order/page.js",
+  "/page": "app/page.js"
+}
