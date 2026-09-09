@@ -3,8 +3,8 @@ import "./globals.css";
 import { readDesign } from "../lib/site-design";
 
 export const metadata: Metadata = {
-  title: "رایامهر | آموزش زبان انگلیسی کودکان",
-  description: "پکیج‌های آموزش زبان انگلیسی کودکان ۲ تا ۱۲ سال؛ مسیری شیرین برای تربیت کودک دوزبانه.",
+  title: "آکادمی زبان میرلو | آموزش زبان انگلیسی کودکان",
+  description: "پکیج‌های آموزش زبان انگلیسی کودکان 0 تا ۱۲ سال؛ مسیری شیرین برای تربیت کودک دوزبانه.",
 };
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
